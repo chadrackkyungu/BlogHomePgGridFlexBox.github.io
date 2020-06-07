@@ -1,0 +1,180 @@
+*{
+    margin:0;
+    padding:0;
+}
+body {
+    
+    font-family: 'Roboto Mono', monospace;
+}
+header{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #edeae5;
+
+
+}
+main{
+    display: grid; 
+}
+.logo{
+font-size: 3rem;
+font-weight: 500;
+color:#016670;
+margin-left: 4%;
+}
+.social-media{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    font-size: 2rem;
+    
+}
+.social-media a{
+ text-decoration: none;
+ color:black;
+ padding: 0.3rem;
+}
+.social-media a :hover{
+    color:#016670;
+}
+.last-post{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color:#fff9c7;
+    padding: 1.8rem;
+    
+}
+.post-picture img{
+    height: 300px;
+    width: 100%;
+    padding: 1rem;
+    object-fit: cover;
+}
+.post-picture {
+    margin-top: 2.5rem;
+    margin-left:4.5rem;
+}
+.post-picture h2{
+    padding: 1rem;
+    color: #016670;
+}
+.post-description{
+    margin: 2.5rem;
+    
+}
+.post-description h2{
+    padding-top: 1rem;
+    color: #016670;
+}
+.post-description p{
+  
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    color: black;
+}
+button{
+    background-color:#edeae5 ;
+    padding: 0.8rem;
+    border-radius: 10%;
+    color:#016670;
+}
+button:hover{
+    cursor: pointer;
+    background-color:#fdf075 ;
+    
+}
+.latest-posts button{
+    background-color:#edeae5 ;
+    padding: 0.8rem;
+    border-radius: 10%;
+    color:#016670;
+}
+.latest-posts button:hover{
+    cursor: pointer;
+    background-color:#9fedd7 ;
+    
+}
+.lp{
+    background-color: #016670;
+    color: white;
+}
+.lp h2{
+    text-align: center;
+    padding: 1rem;
+    border-bottom: solid 1px black;
+}
+.latest-posts{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    margin: 1.5rem;
+    
+}
+.latest-posts img{
+    height: 50%;
+    width: 250px;
+}
+.latest-posts p{
+    color: ;
+}  
+.latest-posts * {
+    padding-bottom: 1rem;
+    
+}
+.footer{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-items: center;
+  background-color: #edeae5;
+}
+.footer h3{
+    padding-top: 1rem;
+}
+.footer ul{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    list-style: none;
+
+}
+.footer ul li a{
+    text-decoration: none;
+    color: black;
+}
+.footer ul li a:hover{
+    color: #016670;
+}
+.footer-socila-media{
+    color:black;
+    padding-top: 1rem;
+}
+.socila-media-icons{
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+.socila-media-icons a{
+    
+    text-decoration:none;
+    color: black;
+}
+.socila-media-icons a:hover{
+    color: #016670;
+}
+footer{
+    background-color:#016670 ;
+    color: white;
+}
+@media (max-width: 575.98px) { 
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    .last-post{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .post-picture{
+        margin: 0;
+    }
+ }
